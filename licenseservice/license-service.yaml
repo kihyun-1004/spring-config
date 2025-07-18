@@ -14,3 +14,9 @@ management:
       enabled: true
 server:
   port: 8082
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ostock_dev
+    username: postgres
+    password: "{cipher}c34a129164771af2c5f9d816366d73e73072eec8ff619561895c7625c1acab5f"
