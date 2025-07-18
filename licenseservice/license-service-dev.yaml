@@ -4,7 +4,7 @@ spring:
 custom:
   name: develop
 example:
-  property: "I AM DEV" 
+  property: "I AM UPDATED DEV" 
 server:
   port: 8083
 
