@@ -19,3 +19,6 @@ management:
   health:
     diskspace:
       enabled: true
+server:
+  port: 8082
+
