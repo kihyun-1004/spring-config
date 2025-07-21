@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/ostock_dev
+    username: postgres
+    password: "{cipher}c34a129164771af2c5f9d816366d73e73072eec8ff619561895c7625c1acab5f"
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+      naming-stretegy: org.hibernate.cfg.ImprovedNamingStretegy
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
