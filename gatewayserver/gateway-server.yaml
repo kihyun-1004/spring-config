@@ -29,7 +29,14 @@ spring:
               - Path=/neworgsvc/**
             uri: lb://ORGANIZATION-SERVICE
             filters:
-              - RewritePath=/neworgsvc/(?<segment>.*), /v1/${segment}
+              - RewritePath=/neworgsvc/(?<segment>.*), /v1/${segment}m,
+          - id: member-service
+            predicates:
+              - Path=/memsvc/**
+            uri: lb://MEMBER-SERVICE
+            filters:
+              - RewritePath=/memsvc/(?<segment>.*), /${segment}
+ 
 
 management:
   endpoints:
